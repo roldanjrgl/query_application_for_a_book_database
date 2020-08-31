@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Jul 23 16:29:45 EDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0164-c8d5-649c-00000ce93fd8 
+on database directory /Users/Jroldan001/OneDrive - The City College of New York/Summer 2018/CSC 221/Assignments/FinalProject/Codes/Final/Part2/FINAL_3/books with class loader sun.misc.Launcher$AppClassLoader@135fbaa4 
+Loaded from file:/Users/Jroldan001/Apache/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-b11
+user.dir=/Users/Jroldan001/OneDrive - The City College of New York/Summer 2018/CSC 221/Assignments/FinalProject/Codes/Final/Part2/FINAL_3
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

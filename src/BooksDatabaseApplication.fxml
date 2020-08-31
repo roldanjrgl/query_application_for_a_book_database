@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BooksDatabaseApplicationController">
+   <bottom>
+      <GridPane hgap="8.0" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="NEVER" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="119.52731323242188" minWidth="99.02896118164062" prefWidth="113.49838256835938" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="158.97103881835938" minWidth="138.47268676757812" prefWidth="144.50161743164062" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="158.97103881835938" minWidth="138.47268676757812" prefWidth="144.50161743164062" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="158.97103881835938" minWidth="138.47268676757812" prefWidth="144.50161743164062" />
+            <ColumnConstraints hgrow="NEVER" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="38.276611328125" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="38.276611328125" minHeight="10.0" prefHeight="20.234039306640625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="42.404266357421875" minHeight="10.0" prefHeight="36.765960693359375" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="111.0" text="Add new Author:" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="2.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets right="2.0" />
+               </padding></Label>
+            <TextField fx:id="addAuthorTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#addAuthorBottomPressed" prefHeight="27.0" prefWidth="105.0" text="Add Author" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Delete Author:" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="2.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets right="2.0" />
+               </padding></Label>
+            <TextField fx:id="deleteAuthorTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#deleteAuthorBottomPressed" prefHeight="27.0" prefWidth="107.0" text="Delete Author" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#addNewTitleBottomPressed" prefHeight="27.0" prefWidth="110.0" text="Add new Title" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <TextField fx:id="isbnTextField" prefHeight="27.0" prefWidth="130.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label prefHeight="21.0" prefWidth="40.0" text="ISBN:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <TextField fx:id="titleTextField" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="editionNumberTextField" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="copyrightTextField" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label text="Book title:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label text="Edition Number:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Label text="Copyright:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <TextField fx:id="authorIDTextField" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label text="AuthorID" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#addToAuthorISBN" text="add to authorISBN" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <GridPane hgap="8.0" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="508.0" minWidth="10.0" prefWidth="413.0" />
+          <ColumnConstraints hgrow="NEVER" maxWidth="278.33331298828125" minWidth="132.0" prefWidth="265.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="263.0" minWidth="27.66668701171875" prefWidth="136.66668701171875" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="269.6666259765625" minWidth="30.1666259765625" prefWidth="154.6666259765625" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="263.0" minWidth="4.5" prefWidth="9.8333740234375" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="28.666667938232422" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="73.33333206176758" minHeight="72.0" prefHeight="73.33333206176758" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="queryTextArea" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefRowCount="3" prefWidth="215.0" promptText="Enter query here the press Submit Query" wrapText="true" GridPane.rowIndex="1" />
+            <ComboBox fx:id="predefinedQuery" prefHeight="18.0" prefWidth="259.0" GridPane.columnIndex="1" />
+            <TextField fx:id="predefinedQueryTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Enter filter text:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="2.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets right="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="filterTextField" prefHeight="25.0" prefWidth="94.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+          <Button mnemonicParsing="false" onAction="#applyFilterButtonPressed" prefHeight="27.0" prefWidth="105.0" text="Apply Filter" GridPane.columnIndex="3" />
+          <Button mnemonicParsing="false" onAction="#submitQueryButtonPressed" prefHeight="27.0" prefWidth="335.0" text="Submit Query" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </top>
+</BorderPane>
